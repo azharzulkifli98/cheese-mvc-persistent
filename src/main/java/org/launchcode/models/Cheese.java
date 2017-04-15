@@ -64,4 +64,12 @@ public class Cheese {
     public void setCategory(Category category) {
         this.category = category;
     }
+
+    public List<Menu> getMenus() {
+        return menus;
+    }
+
+    public void setMenus(List<Menu> menus) {
+        this.menus = menus;
+    }
 }

@@ -42,7 +42,6 @@ public class CategoryController {
     public String processAdd(Model model, @ModelAttribute @Valid Category category, Errors errors) {
 
         if (errors.hasErrors()) {
-            model.addAttribute(new Category());
             model.addAttribute("title", "Add Category");
             return "category/add";
         } else {
